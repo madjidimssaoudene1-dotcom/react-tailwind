@@ -41,6 +41,63 @@ function App() {
             <p className="text-gray-600">This is the third card.</p>
           </div>
         </div>
+
+
+      <div className="min-h-screen flex items-center justify-center  text-white">
+      <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-lg p-8">
+        <h2 className="text-3xl font-bold text-center mb-6">Contact Us</h2>
+        
+        <form className="space-y-4">
+          {/* Name */}
+          <div>
+            <label htmlFor="name" className="block text-sm font-medium mb-1">
+              Your Name
+            </label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+              className="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            />
+          </div>
+
+          {/* Email */}
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium mb-1">
+              Your Email
+            </label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              className="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            />
+          </div>
+
+          {/* Message */}
+          <div>
+            <label htmlFor="message" className="block text-sm font-medium mb-1">
+              Message
+            </label>
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="Write your message..."
+              className="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            ></textarea>
+          </div>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="w-full bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+    
       </div>
     </>
   );
